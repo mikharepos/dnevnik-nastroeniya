@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дневник настроения</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app">
+
+    <h1>«Как прошёл ваш день?»</h1>
+    
+    <p id="greeting" class="greeting"></p>
+    <p id="counter" class="counter"></p>
+
+    <div class="mood-buttons">
+        <button data-mood="Хорошо">😊<br>Хорошо</button>
+        <button data-mood="Нормально">😐<br>Нормально</button>
+        <button data-mood="Плохо">😔<br>Плохо</button>
+    </div>
+
+    <label for="note">Что произошло или о чём вы думаете?</label>
+    <textarea id="note" rows="4"
+      placeholder="Напиши мне пару слов..."></textarea>
+
+    <button class="save-button">Сохранить</button>
+
+    <h2>Мои записи</h2>
+    <div id="entries">
+      <p>«Здесь появятся ваши записи».</p>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
