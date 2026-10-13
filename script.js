@@ -28,7 +28,7 @@ function showGreeting() {
   let text = "";
 
   if (hour >= 5 && hour < 12) {
-    text = "Доброе утро! Как вы себя чувствуете?";
+    text = «Доброе утро! Начните день с одной честной записи»;
   } else if (hour >= 12 && hour < 18) {
     text = "Добрый день! Как проходит ваш день?";
   } else if (hour >= 18 && hour < 23) {
@@ -45,7 +45,7 @@ function showCounter() {
   const count = entries.length;
 
   if (count === 0) {
-    counter.textContent = "Записей пока нет";
+    counter.textContent = «Начните с первой записи»;
   } else if (count === 1) {
     counter.textContent = "1 запись";
   } else if (count >= 2 && count <= 4) {
